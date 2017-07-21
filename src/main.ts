@@ -59,4 +59,4 @@ var pizzaStack = new PizzaStack();
 pizzaStack.Add(new BBQPizza());
 pizzaStack.Add(new HawaiiPizza());
 
-document.body.innerHTML = pizzaStack.PrintName();
+document.getElementById("Composite").innerHTML = pizzaStack.PrintName();
