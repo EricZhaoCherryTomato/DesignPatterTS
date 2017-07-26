@@ -11,6 +11,10 @@ var glob = require('glob');
 var tslint = require("gulp-tslint");
 var tsFiles = glob.sync('src/*.ts');
 
+var ts = require('gulp-typescript');
+
+var jasmine = require('gulp-jasmine');
+
 gulp.task("copy-html", function () {
     return gulp.src(paths.pages)
         .pipe(gulp.dest("dist"));

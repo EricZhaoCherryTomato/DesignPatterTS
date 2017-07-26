@@ -1,5 +1,5 @@
 //TypeScript Quick Start
-class Student {
+export class Student {
     fullName: string;
     constructor(public firstName:string, public middleInitial:string, public lastName:string) {
         this.fullName = firstName + " " + middleInitial + " " + lastName;
@@ -55,8 +55,17 @@ class PizzaStack implements IPizza{
 	}
 }
 
-var pizzaStack = new PizzaStack();
-pizzaStack.Add(new BBQPizza());
-pizzaStack.Add(new HawaiiPizza());
+//var pizzaStack = new PizzaStack();
+//pizzaStack.Add(new BBQPizza());
+//pizzaStack.Add(new HawaiiPizza());
 
-document.getElementById("Composite").innerHTML = pizzaStack.PrintName();
+//document.getElementById("Composite").innerHTML = pizzaStack.PrintName();
+
+
+
+
+export function hello() {
+  return 'Hello World!';
+}
+
+export default Student;
