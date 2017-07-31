@@ -25,18 +25,18 @@ var user = new Student("Jane", "M.", "User");
 interface IPizza {
 	PrintName() :string;
 }
-class BBQPizza implements IPizza{
+export class BBQPizza implements IPizza{
 	PrintName(){
 		return "BBQ Pizza";
 	}
 }
-class HawaiiPizza implements IPizza{
+export class HawaiiPizza implements IPizza{
 	PrintName(){
 		return "Hawaii Pizza";
 	}
 }
 
-class PizzaStack implements IPizza{
+export class PizzaStack implements IPizza{
 	pizzas: Array<IPizza>;
 	constructor(){
 		this.pizzas = [];
@@ -67,5 +67,3 @@ class PizzaStack implements IPizza{
 export function hello() {
   return 'Hello World!';
 }
-
-export default Student;

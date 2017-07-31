@@ -1,7 +1,7 @@
 {
   
   "scripts": {
-    "test": "mocha -r ts-node/register src/tests/main.spec.ts"
+    "test": "mocha -r ts-node/register src/tests/*.spec.ts"
   },
 
   "dependencies": {
