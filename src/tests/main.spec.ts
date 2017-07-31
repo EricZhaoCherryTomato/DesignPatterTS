@@ -1,6 +1,6 @@
 import * as sut from '../main';
 import { expect } from 'chai';
- import 'mocha';
+import 'mocha';
 
 describe('Hello function', () => {
   it('should return hello world', () => {
